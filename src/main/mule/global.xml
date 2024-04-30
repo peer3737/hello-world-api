@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:api-gateway="http://www.mulesoft.org/schema/mule/api-gateway" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/mule/api-gateway/current/mule-api-gateway.xsd">
+	<api-gateway:autodiscovery apiId="${api.id}" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="d3194ede-e740-4d58-9f1d-66a5bacc1679" flowRef="hello-world-api-main" />
+	<configuration-properties doc:name="Configuration properties" doc:id="2f5cc4fb-2057-44eb-9dad-ae8c6ff6817a" file="hello-world-${env}.yaml" />
+</mule>
